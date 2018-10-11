@@ -1,0 +1,51 @@
+{
+  "cb_url": "",
+  "cb_api": "",
+  "workers": 5,
+  "output_folder": "OUTPUT",
+  "include_endpoints": [],
+  "exclude_endpoints": [],
+  "acquisition_type": 0,
+  "req_dirs": [
+    "C:\\Windows\\system32\\notepad.exe"
+  ],
+  "req_dir_extras": [
+    {
+      "schtasks": [
+        "C:\\windows\\Tasks\\",
+        "C:\\windows\\System32\\Tasks\\"
+      ]
+    },
+    {
+      "webcache": [
+        "C:\\users\\<user>\\AppData\\Local\\Microsoft\\Windows\\WebCache\\"
+      ]
+    },
+    {
+      "windowsEventLogs": [
+        "C:\\windows\\system32\\winevt\\logs\\"
+      ]
+    },
+    {
+      "iisLogs": [
+        "C:\\inetpub\\Logs\\LogFiles\\W3SVC1\\",
+        "C:\\inetpub\\Logs\\LogFiles\\W3SVC2\\"]
+    },
+    {
+      "amcache": [
+        "C:\\Windows\\AppCompat\\Programs\\Amcache.hve"
+      ],
+      "notes":"Sometimes this file is locked and can only be acquired using the RAW disk access (checkout raw copy) -> https://github.com/jschicht/RawCopy"
+    },
+    {
+      "recentFileCache":[
+        "C:\\Windows\\AppCompat\\Programs\\RecentFileCache.bcf"
+      ]
+    },
+    {
+      "wbemRepo":[
+        "C:\\windows\\system32\\wbem\\Repository\\"
+      ]
+    }
+  ]
+}
